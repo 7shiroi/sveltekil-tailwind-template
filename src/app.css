@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Custom CSS for dark theme and color scheme */
+:root {
+  /* Dark theme color scheme - Professional slate/cyan palette */
+  --color-primary: #06b6d4; /* cyan-500 */
+  --color-primary-dark: #0891b2; /* cyan-600 */
+  --color-secondary: #64748b; /* slate-500 */
+  --color-accent: #8b5cf6; /* violet-500 */
+  --color-success: #10b981; /* emerald-500 */
+  --color-warning: #f59e0b; /* amber-500 */
+  --color-error: #ef4444; /* red-500 */
+  
+  /* Dark background colors */
+  --color-bg-primary: #0f172a; /* slate-900 */
+  --color-bg-secondary: #1e293b; /* slate-800 */
+  --color-bg-tertiary: #334155; /* slate-700 */
+  
+  /* Text colors for dark theme */
+  --color-text-primary: #f8fafc; /* slate-50 */
+  --color-text-secondary: #cbd5e1; /* slate-300 */
+  --color-text-muted: #94a3b8; /* slate-400 */
+}
+
+/* Set dark theme as default */
+html {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+body {
+  @apply bg-slate-900 text-slate-50;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Ensure dark theme works properly */
+.dark {
+  color-scheme: dark;
+} 
